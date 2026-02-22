@@ -93,7 +93,7 @@ export function allRGB(colors: string[]): boolean {
  */
 export function makeMath(addends: number[]): string {
     if (addends.length === 0) return "0=0";
-    return '${addends.reduce((a,b)=>a+b,0)}=${addends.join("+")}';
+    return `${addends.reduce((a,b)=>a+b,0)}=${addends.join("+")}`;
 }
 
 /**
