@@ -258,3 +258,16 @@ export function duplicateQuestionInArray(questions: Question[], targetId: number
         ...questions.slice(index + 1)
     ];
 }
+
+export function makeBlankQuestion(id: number, name: string, type: QuestionType): Question {
+    return {
+        id: id,
+        name: name,
+        type: type,
+        body: "",
+        expected: "",
+        options: [],
+        points: 1,
+        published: false
+    };
+}
