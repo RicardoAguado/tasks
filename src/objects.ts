@@ -159,9 +159,9 @@ export function mergeQuestion(
 ): Question {
     return {
         ...contentQuestion,
-        id: id,
-        name: name,
-        points: points,
+        id,
+        name,
+        points,
         published: false
     };
 }
